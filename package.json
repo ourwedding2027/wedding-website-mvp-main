@@ -1,0 +1,13 @@
+{
+  "name": "wedding-website",
+  "version": "1.0.0",
+  "description": "Laura & Peter Wedding Website",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": ["wedding", "static-site"],
+  "author": "Laura & Peter",
+  "license": "UNLICENSED"
+}

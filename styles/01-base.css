@@ -1,0 +1,119 @@
+﻿:root {
+  --ivory: #FBF8F3;
+  --paper: #F7F3EC;
+
+  --burgundy: #8F232E;
+  --burgundy-soft: #76202A;
+
+  --brass: #B48A4E;
+
+  --sage: #87927F;
+  --eucalyptus: #A8B4A2;
+  --berry: #8E2934;
+
+  --ink: #272823;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Libre Baskerville", Georgia, serif;
+  --font-script: "Great Vibes", cursive;
+  --font-couple: "The Youngest Serif", "Malibu", "Cormorant Garamond", Georgia, serif;
+
+  --page-width: 1280px;
+  --section-space: clamp(5rem, 9vw, 9rem);
+
+  --page-bg: var(--ivory);
+  --header-bg: rgba(251, 248, 243, 0.95);
+  --header-border: rgba(84, 28, 33, 0.15);
+  --hero-card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.66) 100%);
+  --hero-card-border: rgba(84, 28, 33, 0.14);
+  --hero-card-shadow: 0 22px 52px rgba(84, 28, 33, 0.08);
+  --panel-bg: rgba(255, 255, 255, 0.78);
+  --panel-border: rgba(84, 28, 33, 0.12);
+  --soft-bg: rgba(247, 243, 236, 0.72);
+  --soft-border: rgba(84, 28, 33, 0.12);
+  --unit-bg: radial-gradient(circle at 50% 20%, rgba(180, 138, 78, 0.18) 0%, rgba(84, 28, 33, 0.06) 70%);
+  --unit-border: rgba(84, 28, 33, 0.1);
+}
+
+body.theme-botanical {
+  --page-bg: var(--ivory);
+}
+
+body.theme-editorial {
+  --ivory: #f8f4ed;
+  --paper: #f3ede3;
+  --burgundy: #4b1b26;
+  --burgundy-soft: #6f3140;
+  --brass: #b79259;
+  --ink: #2d2a26;
+  --page-bg: linear-gradient(180deg, #f9f6ef 0%, #f3ede2 100%);
+  --header-bg: rgba(248, 244, 237, 0.96);
+  --hero-card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.84) 0%, rgba(252, 247, 239, 0.84) 100%);
+  --panel-bg: rgba(255, 255, 255, 0.84);
+}
+
+body.theme-modern {
+  --ivory: #f3f5f7;
+  --paper: #eceff3;
+  --burgundy: #243041;
+  --burgundy-soft: #3d536f;
+  --brass: #7f9ab8;
+  --ink: #1f2430;
+  --page-bg: linear-gradient(180deg, #f4f6f9 0%, #e9edf2 100%);
+  --header-bg: rgba(244, 246, 249, 0.95);
+  --header-border: rgba(36, 48, 65, 0.18);
+  --hero-card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(238, 243, 249, 0.86) 100%);
+  --hero-card-border: rgba(36, 48, 65, 0.18);
+  --hero-card-shadow: 0 20px 50px rgba(36, 48, 65, 0.12);
+  --panel-bg: rgba(255, 255, 255, 0.88);
+  --panel-border: rgba(36, 48, 65, 0.15);
+  --soft-bg: rgba(236, 239, 243, 0.82);
+  --soft-border: rgba(36, 48, 65, 0.14);
+  --unit-bg: radial-gradient(circle at 50% 20%, rgba(127, 154, 184, 0.24) 0%, rgba(36, 48, 65, 0.07) 70%);
+  --unit-border: rgba(36, 48, 65, 0.14);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.skip-navigation {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  background: var(--burgundy);
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-navigation:focus {
+  top: 0;
+}
+
+.hero-floral-left,
+.hero-floral-right,
+.botanical,
+.countdown-botanical,
+.menu-botanical,
+.celebration-botanical,
+.timeline-floral,
+.faq-botanical,
+.rsvp-floral {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}

@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laura & Peter Wedding | October 9, 2027</title>
+  <meta name="description" content="Join us as we celebrate our wedding day on October 9, 2027. Find venue details, RSVP information, and travel guidance.">
+  <meta name="theme-color" content="#8F232E">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourweddingsite.com/">
+  <meta property="og:title" content="Laura & Peter Wedding | October 9, 2027">
+  <meta property="og:description" content="Join us as we celebrate our wedding day on October 9, 2027.">
+  <meta property="og:image" content="https://yourweddingsite.com/assets/heros/Gallery.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourweddingsite.com/">
+  <meta property="twitter:title" content="Laura & Peter Wedding | October 9, 2027">
+  <meta property="twitter:description" content="Join us as we celebrate our wedding day on October 9, 2027.">
+  <meta property="twitter:image" content="https://yourweddingsite.com/assets/heros/Gallery.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260818-1">
+</head>
+<body>
+  <a href="#main-content" class="skip-navigation" data-i18n="common.skip_navigation">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand">Laura & Peter</div>
+    <nav aria-label="Main navigation" data-i18n-aria-label="common.main_navigation">
+      <a href="#venue" data-i18n="nav.venue">Venue</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#travel" data-i18n="nav.travel">Travel Info</a>
+      <a href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
+      <a href="#faq" data-i18n="nav.faq">FAQs</a>
+    </nav>
+    <div class="header-language-switch" aria-label="Language switch" data-i18n-aria-label="common.language_switch">
+      <button class="header-language-btn is-active" type="button" data-language="en" aria-pressed="true">English</button>
+      <button class="header-language-btn" type="button" data-language="hu" aria-pressed="false">Magyar</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="invitation-hero hero">
+      <img
+        src="assets/flowers/hero_left_corner.png"
+        class="hero-floral-left"
+        alt=""
+      >
+      <img
+        src="assets/flowers/invitation_right.png"
+        class="hero-floral-right"
+        alt=""
+      >
+
+      <div class="hero-content">
+        <div class="hero-divider"></div>
+
+        <h1>
+          LAURA <span data-i18n="hero.and">and</span> PETER
+        </h1>
+
+        <p class="hero-copy" data-i18n="hero.copy">JOYFULLY INVITE YOU TO CELEBRATE THEIR MARRIAGE</p>
+        <div class="heart-divider">
+          <span></span>
+          <b>&hearts;</b>
+          <span></span>
+        </div>
+
+        <p class="hero-date">09.10.2027</p>
+
+        <div class="language-selector">
+          <p class="language-selector-title" data-i18n="hero.language_prompt">Choose your language</p>
+          <div class="language-buttons" aria-label="Language switch" data-i18n-aria-label="common.language_switch">
+            <button id="lang-en" class="language-btn language-btn--active active" type="button" data-language="en">English</button>
+            <button id="lang-hu" class="language-btn language-btn--outline" type="button" data-language="hu">Magyar</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="countdown" class="panel countdown-section">
+      <img
+        src="assets/leaves/FAQ_greenery.png"
+        class="countdown-botanical"
+        alt=""
+        loading="lazy"
+      >
+
+      <div class="countdown-inner">
+        <h2 class="countdown-title" data-i18n="countdown.title">Countdown</h2>
+        <div class="countdown-divider" aria-hidden="true">&hearts;</div>
+
+        <div class="countdown-grid" aria-live="polite">
+          <div class="countdown-item">
+            <strong id="cd-days" class="countdown-number">0</strong>
+            <span class="countdown-label" data-i18n="countdown.days">Days</span>
+          </div>
+          <div class="countdown-item">
+            <strong id="cd-hours" class="countdown-number">0</strong>
+            <span class="countdown-label" data-i18n="countdown.hours">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <strong id="cd-mins" class="countdown-number">0</strong>
+            <span class="countdown-label" data-i18n="countdown.minutes">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <strong id="cd-secs" class="countdown-number">0</strong>
+            <span class="countdown-label" data-i18n="countdown.seconds">Seconds</span>
+          </div>
+        </div>
+
+        <p class="countdown-caption" data-i18n="countdown.caption">until we say I do</p>
+      </div>
+    </section>
+
+    <section class="section editorial-section wedding-details">
+      <div class="wedding-details-timeline">
+        <h2 data-i18n="wedding_timeline.title">Order of the Day</h2>
+        <div class="heart-divider wedding-details-divider" aria-hidden="true">
+          <span></span>
+          <b>&hearts;</b>
+          <span></span>
+        </div>
+        <p class="wedding-details-subtitle" data-i18n="wedding_timeline.subtitle">Here is how our day unfolds</p>
+
+        <div class="wedding-events">
+          <article class="wedding-event">
+            <span class="wedding-event-icon wedding-event-icon--church" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M10 9h4" /><path d="M12 7v5" /><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9" /><path d="M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14" /></svg>
+            </span>
+            <div>
+              <p class="wedding-event-time">13:00</p>
+              <h3 data-i18n="wedding_timeline.event1_title">Ceremony</h3>
+              <p data-i18n="wedding_timeline.event1_note">Vows, tears, and one very nervous groom.</p>
+            </div>
+          </article>
+          <article class="wedding-event">
+            <span class="wedding-event-icon wedding-event-icon--martini" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M12 12 4.207 4.207A.707.707 0 0 1 4.707 3h14.586a.707.707 0 0 1 .5 1.207z" /><path d="M12 12v10" /><path d="M7 22h10" /></svg>
+            </span>
+            <div>
+              <p class="wedding-event-time">15:00</p>
+              <h3 data-i18n="wedding_timeline.event2_title">Drinks Reception</h3>
+              <p data-i18n="wedding_timeline.event2_note">Bubbles first, speeches later.</p>
+            </div>
+          </article>
+          <article class="wedding-event">
+            <span class="wedding-event-icon wedding-event-icon--dinner" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M12 3V2" /><path d="m15.4 17.4 3.2-2.8a2 2 0 1 1 2.8 2.9l-3.6 3.3c-.7.8-1.7 1.2-2.8 1.2h-4c-1.1 0-2.1-.4-2.8-1.2l-1.302-1.464A1 1 0 0 0 6.151 19H5" /><path d="M2 14h12a2 2 0 0 1 0 4h-2" /><path d="M4 10h16" /><path d="M5 10a7 7 0 0 1 14 0" /><path d="M5 14v6a1 1 0 0 1-1 1H2" /></svg>
+            </span>
+            <div>
+              <p class="wedding-event-time">17:00</p>
+              <h3 data-i18n="wedding_timeline.event3_title">Dinner</h3>
+              <p data-i18n="wedding_timeline.event3_note">Fork this way, please.</p>
+            </div>
+          </article>
+          <article class="wedding-event">
+            <span class="wedding-event-icon wedding-event-icon--cake" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M16 13H3" /><path d="M16 17H3" /><path d="m7.2 7.9-3.388 2.5A2 2 0 0 0 3 12.01V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8.654c0-2-2.44-6.026-6.44-8.026a1 1 0 0 0-1.082.057L10.4 5.6" /><circle cx="9" cy="7" r="2" /></svg>
+            </span>
+            <div>
+              <p class="wedding-event-time">19:00</p>
+              <h3 data-i18n="wedding_timeline.event4_title">Cake</h3>
+              <p data-i18n="wedding_timeline.event4_note">Sugar, spice, and a shared slice.</p>
+            </div>
+          </article>
+          <article class="wedding-event">
+            <span class="wedding-event-icon wedding-event-icon--dance" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>
+            </span>
+            <div>
+              <p class="wedding-event-time">19:30</p>
+              <h3 data-i18n="wedding_timeline.event5_title">Let's Dance!</h3>
+              <p data-i18n="wedding_timeline.event5_note">Brace yourselves...the party can't be stopped!</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="celebration-section">
+      <div class="celebration-inner">
+        <header class="celebration-header">
+          <h2><span class="celebration-kicker" data-i18n="celebration.kicker">The</span> <span data-i18n="celebration.title">Celebration</span></h2>
+          <div class="heart-divider celebration-divider" aria-hidden="true">
+            <span></span>
+            <b>&hearts;</b>
+            <span></span>
+          </div>
+        </header>
+
+        <div class="celebration-cards">
+          <article class="celebration-card celebration-card--ceremony">
+            <svg class="celebration-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 9h4"/><path d="M12 7v5"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9"/><path d="M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14"/></svg>
+            <p class="celebration-card-label"><span></span><span data-i18n="celebration.ceremony_label">Ceremony</span><span></span></p>
+            <h3 data-i18n="celebration.church_name">Church of Our Lady of the Assumption</h3>
+            <p class="celebration-card-location" data-i18n="celebration.church_location">Magherafelt</p>
+            <div class="celebration-mini-divider" aria-hidden="true"></div>
+            <p class="celebration-card-description" data-i18n="celebration.timing_summary">Ceremony starts at 13:00 and guest arrival is from 12:30.</p>
+            <div class="celebration-photo-frame">
+              <img src="assets/heros/church_pic.png" class="celebration-photo" alt="Church of Our Lady of the Assumption, Magherafelt" data-i18n-alt="image.church_alt" loading="lazy">
+            </div>
+            <address class="celebration-card-address">Church of Our Lady of the Assumption<br>King St, Magherafelt BT45 6AS</address>
+            <a class="celebration-card-directions" href="https://www.google.com/maps/search/?api=1&query=Church+of+Our+Lady+of+the+Assumption%2C+King+St%2C+Magherafelt+BT45+6AS" target="_blank" rel="noreferrer" data-i18n="celebration.directions">Directions &rarr;</a>
+            <div class="celebration-card-map">
+              <iframe src="https://www.google.com/maps?q=Church+of+Our+Lady+of+the+Assumption,+King+St,+Magherafelt+BT45+6AS&output=embed" title="Map showing Church of Our Lady of the Assumption, Magherafelt" data-i18n-title="image.church_map_title" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </article>
+
+          <div class="celebration-connector" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 17h14"/><path d="M6 17 4 9h12l3 5h1a2 2 0 0 1 2 2v1h-2"/><path d="M4 17H2v-2a2 2 0 0 1 2-2h1"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          </div>
+
+          <article class="celebration-card celebration-card--reception">
+            <svg class="celebration-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V5l7-3 7 3v16"/><path d="M9 21v-4h6v4"/><path d="M8 8h1"/><path d="M15 8h1"/><path d="M8 12h1"/><path d="M15 12h1"/></svg>
+            <p class="celebration-card-label"><span></span><span data-i18n="celebration.reception_label">Reception</span><span></span></p>
+            <h3 data-i18n="celebration.hotel_name">Glenavon House Hotel</h3>
+            <p class="celebration-card-location" data-i18n="celebration.hotel_location">Cookstown, Northern Ireland</p>
+            <div class="celebration-mini-divider" aria-hidden="true"></div>
+            <p class="celebration-card-description" data-i18n="celebration.hotel_intro">Just a short drive from the church, the celebrations will continue at Glenavon House Hotel.</p>
+            <div class="celebration-photo-frame celebration-photo-frame--reception">
+              <img src="assets/heros/venue_celebrations.png" class="celebration-photo" alt="Glenavon House Hotel, Cookstown" data-i18n-alt="image.hotel_alt" loading="lazy">
+            </div>
+            <address class="celebration-card-address">Glenavon House Hotel<br>52 Drum Road, Cookstown BT80 8JQ</address>
+            <a class="celebration-card-directions" href="https://www.google.com/maps/search/?api=1&query=Glenavon+House+Hotel%2C+52+Drum+Road%2C+Cookstown%2C+Northern+Ireland" target="_blank" rel="noreferrer" data-i18n="celebration.directions">Directions &rarr;</a>
+            <div class="celebration-card-map">
+              <iframe src="https://www.google.com/maps?q=Glenavon+House+Hotel,+Cookstown&output=embed" title="Map showing Glenavon House Hotel Cookstown" data-i18n-title="image.hotel_map_title" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </article>
+        </div>
+
+        <div class="celebration-journey" aria-hidden="true">
+          <span class="celebration-journey-line"></span>
+          <svg viewBox="0 0 24 24"><path d="M5 17h14"/><path d="M6 17 4 9h12l3 5h1a2 2 0 0 1 2 2v1h-2"/><path d="M4 17H2v-2a2 2 0 0 1 2-2h1"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          <p data-i18n="celebration.short_drive">A short drive between venues</p>
+          <span class="celebration-journey-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="venue" class="panel venue-hero">
+      <img src="assets/heros/HeroStay.png" alt="Glenavon House Hotel grounds" data-i18n-alt="image.hotel_grounds_alt" class="venue-hero-image" loading="lazy">
+      <div class="venue-hero-overlay" aria-hidden="true"></div>
+      <div class="venue-hero-frame">
+        <div class="venue-hero-content">
+          <p class="venue-hero-eyebrow" data-i18n="venue.title">Our Venue</p>
+          <div class="heart-divider venue-hero-divider" aria-hidden="true">
+            <span></span>
+            <b>&hearts;</b>
+            <span></span>
+          </div>
+          <p class="venue-hero-copy" data-i18n="venue.intro">Nestled along the River Ballinderry and surrounded by beautiful grounds, the Glenavon House Hotel is the perfect setting for our celebration &mdash; a place to relax, celebrate, and dance the night away.</p>
+          <div class="venue-hero-stay">
+            <h3 data-i18n="venue.stay_title">Stay the Night</h3>
+            <p class="venue-hero-stay-subtitle" data-i18n="venue.stay_subtitle">Special Wedding Rate</p>
+            <p data-i18n="venue.stay_copy1">A limited number of rooms have been reserved for our wedding guests at a special discounted rate.</p>
+            <p><strong data-i18n="venue.stay_note">This rate is not available online.</strong></p>
+            <p>
+              <span data-i18n="venue.stay_copy2a">Please book directly with the hotel by phone or email and quote</span>
+              <strong>&ldquo;Laura &amp; Peter, 9 October 2027&rdquo;</strong>
+              <span data-i18n="venue.stay_copy2b">to receive the wedding rate. Guests staying at the hotel can also make the most of its leisure and spa facilities &mdash; perfect for a little relaxation before or after the festivities.</span>
+            </p>
+          </div>
+          <a class="venue-hero-directions" href="https://glenavonhotel.com/" target="_blank" rel="noreferrer" data-i18n="venue.directions">Visit the Venue Website</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="panel menu-section">
+      <div class="menu-inner">
+        <h2 class="menu-title" data-i18n="menu.title">Menu</h2>
+        <div class="menu-divider" aria-hidden="true">&hearts;</div>
+
+        <div class="menu-stationery">
+          <img src="assets/leaves/leaves10.png" class="menu-botanical menu-botanical-top-right" alt="" aria-hidden="true" loading="lazy">
+          <img src="assets/leaves/leaves11.png" class="menu-botanical menu-botanical-bottom-left" alt="" aria-hidden="true" loading="lazy">
+          <div class="menu-courses">
+            <article class="menu-course">
+              <h3 data-i18n="menu.starter_title">Starter</h3>
+              <div class="menu-course-ornament" aria-hidden="true"></div>
+              <div class="menu-course-copy">
+                <p data-i18n="menu.starter_name">Pureed Leek and Potato Soup</p>
+                <p data-i18n="menu.starter_note">served with aselection of breads</p>
+              </div>
+            </article>
+            <article class="menu-course menu-course-main">
+              <h3 data-i18n="menu.main_title">Main</h3>
+              <div class="menu-course-ornament" aria-hidden="true"></div>
+              <div class="menu-course-copy menu-course-copy-main">
+                <p data-i18n="menu.main_beef">Roast Silverside of Beef</p>
+                <p data-i18n="menu.main_beef_note">served with horseradish sauce and pan gravy</p>
+                <p class="menu-choice-divider" data-i18n="menu.main_or">or</p>
+                <p data-i18n="menu.main_chicken">Panfried Chicken Fillet</p>
+                <p data-i18n="menu.main_chicken_note">Served with a leek, bacon, mushroom and cider sauce</p>
+                <p class="menu-accent-label" data-i18n="menu.accompanied_title">accompanied by</p>
+                <p data-i18n="menu.side_potatoes">Creamed Potatoes</p>
+                <p data-i18n="menu.side_boiled">Buttered Baby Boiled Potatoes with Herbs</p>
+                <p data-i18n="menu.side_cauliflower">Cauliflower Cheese Gratin</p>
+                <p data-i18n="menu.side_carrots">Roast Carrots and Parsnips</p>
+              </div>
+            </article>
+            <article class="menu-course">
+              <h3 data-i18n="menu.dessert_title">Dessert</h3>
+              <div class="menu-course-ornament" aria-hidden="true"></div>
+              <div class="menu-course-copy">
+                <p data-i18n="menu.dessert_name">Assiette of Desserts containing Milk Chocolate Profiterole, Mini Apple Tart, Meringue Nest</p>
+                <p class="menu-accent-label" data-i18n="menu.dessert_followed_by">Followed by</p>
+                <p data-i18n="menu.dessert_cake">Our Wedding Cake</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="travel" class="travel-section">
+      <div class="travel-intro">
+        <div class="travel-intro-copy">
+          <p class="travel-kicker" data-i18n="travel.kicker">Travel Information</p>
+          <div class="travel-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+          <p class="travel-script" data-i18n="travel.script">Your journey to Ireland</p>
+          <p class="travel-lead" data-i18n="travel.lead">Whether you’re travelling from near or far, we’re so grateful you’re making the journey to celebrate with us.</p>
+          <p data-i18n="travel.intro">We’ve gathered everything you need for planning your visit — airports, getting to Cookstown, accommodation and a few ideas for exploring Ireland while you’re here.</p>
+          <button class="travel-toggle" type="button" aria-expanded="false" aria-controls="travel-guide-details" data-i18n-closed="travel.explore" data-i18n-open="travel.close_guide">Explore Travel Guide &darr;</button>
+        </div>
+        <div class="travel-map-wrap">
+          <img class="travel-map" src="assets/heros/Ireland_travel.png" alt="Ireland coastline with a travelling airplane" data-i18n-alt="travel.map_alt" loading="lazy">
+          <p class="travel-map-caption" data-i18n="travel.map_caption">Dunluce Castle, Northern Ireland</p>
+        </div>
+      </div>
+
+      <div id="travel-guide-details" class="travel-guide" hidden>
+        <section class="travel-guide-section travel-getting-here">
+          <div class="travel-section-heading">
+            <h2 data-i18n="travel.getting_title">Getting Here</h2>
+            <div class="travel-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+          </div>
+          <div class="airport-grid">
+            <article class="airport-item">
+              <svg class="airport-plane" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M3 17.5h9.5l5.2-9.5h2.1l-1.3 9.5h7.8c1.7 0 2.7.7 2.7 1.5s-1 1.5-2.7 1.5h-7.8l1.3 9.5h-2.1l-5.2-9.5H3l3.2-1.5L3 17.5Z" />
+              </svg>
+              <span class="airport-code">BFS</span>
+              <h3 data-i18n="travel.bfs_title">Belfast International Airport</h3>
+              <p data-i18n="travel.bfs_details">The closest airport to our venue, with connections to many destinations. From Hungary, a connecting flight is required, with routes via England often the most convenient.</p>
+              <small data-i18n="travel.bfs_time">Approx. 40 minutes from the venue · Car &amp; bus options available</small>
+            </article>
+            <article class="airport-item">
+              <svg class="airport-plane" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M3 17.5h9.5l5.2-9.5h2.1l-1.3 9.5h7.8c1.7 0 2.7.7 2.7 1.5s-1 1.5-2.7 1.5h-7.8l1.3 9.5h-2.1l-5.2-9.5H3l3.2-1.5L3 17.5Z" />
+              </svg>
+              <span class="airport-code">BHD</span>
+              <h3 data-i18n="travel.bhd_title">Belfast City Airport</h3>
+              <p data-i18n="travel.bhd_details">Ideal for combining your trip with a stay in Belfast. From Hungary, connecting routes are available, including convenient options via Amsterdam and Great Britain.</p>
+              <small data-i18n="travel.bhd_time">Approx. 1 hour from the venue · Car &amp; bus options available</small>
+            </article>
+            <article class="airport-item">
+              <svg class="airport-plane" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M3 17.5h9.5l5.2-9.5h2.1l-1.3 9.5h7.8c1.7 0 2.7.7 2.7 1.5s-1 1.5-2.7 1.5h-7.8l1.3 9.5h-2.1l-5.2-9.5H3l3.2-1.5L3 17.5Z" />
+              </svg>
+              <span class="airport-code">DUB</span>
+              <h3 data-i18n="travel.dub_title">Dublin Airport</h3>
+              <p data-i18n="travel.dub_details">The easiest option for direct travel from Budapest, with excellent international connections and regular coach services north to Northern Ireland.</p>
+              <small data-i18n="travel.dub_time">Approx. 2 hours from the venue · Car &amp; coach options available</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="travel-stay-band">
+          <h2 data-i18n="travel.stay_title">A Place to Stay</h2>
+          <div class="travel-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+          <div class="travel-stay-content">
+            <img class="travel-stay-suitcase" src="assets/icons/suitcase_icon.png" alt="" aria-hidden="true" loading="lazy">
+            <div class="travel-stay-copy">
+              <p class="travel-stay-lead" data-i18n="travel.stay_lead">We want our overseas guests to feel at home while you’re here.</p>
+              <p data-i18n="travel.stay_copy">Laura has arranged accommodation for guests travelling from abroad. Please contact her directly for details and availability.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="travel-itineraries">
+          <h2 data-i18n="travel.trip_title">Make a Trip of It</h2>
+          <div class="travel-divider itinerary-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+          <p class="travel-script" data-i18n="travel.trip_script">Stay for a little while...</p>
+          <p class="travel-trip-copy" data-i18n="travel.trip_copy">Coming all this way? We’ve put together a few ideas for making the most of your time in Ireland — whether you’re joining us just for the celebrations or turning the wedding into a little Irish adventure.</p>
+
+          <article class="itinerary-featured">
+            <div class="itinerary-featured-copy">
+              <span class="itinerary-eyebrow" data-i18n="travel.wedding_weekend_label">The Wedding Weekend</span>
+              <p class="itinerary-subtitle" data-i18n="travel.wedding_weekend_subtitle">Just here for the celebrations</p>
+              <p class="itinerary-meta" data-i18n="travel.wedding_weekend_dates">4 Days · 3 Nights</p>
+              <p class="itinerary-date" data-i18n="travel.wedding_weekend_date">8–11 October 2027</p>
+              <p class="itinerary-route" data-i18n="travel.wedding_weekend_route">Dublin/Belfast → Cookstown → The Wedding → Dublin/Belfast</p>
+              <button class="itinerary-toggle" type="button" aria-expanded="false" aria-controls="itinerary-wedding-weekend" data-i18n-closed="travel.view_itinerary" data-i18n-open="travel.close_itinerary">View Itinerary ↓</button>
+            </div>
+            <div class="itinerary-featured-art" aria-hidden="true">
+              <img src="assets/heros/cookstown.jpeg" alt="Cookstown">
+            </div>
+            <div id="itinerary-wedding-weekend" class="itinerary-details itinerary-details--featured" hidden>
+              <div class="itinerary-timeline">
+                <article class="itinerary-day">
+                  <span class="itinerary-day-marker">◆</span>
+                  <div><span class="itinerary-day-label" data-i18n="travel.wedding_day1_label">Friday 8 October</span><h3 data-i18n="travel.wedding_day1_title">Arrive in Ireland</h3><p class="itinerary-route" data-i18n="travel.wedding_day1_route">Dublin → Cookstown</p><p data-i18n="travel.wedding_day1_copy">Guests can take a morning flight to Dublin and then travel north towards Cookstown/Magherafelt. Check into accommodation during the afternoon, settle in and enjoy a relaxed evening before the wedding.</p></div>
+                </article>
+                <article class="itinerary-day">
+                  <span class="itinerary-day-marker">◆</span>
+                  <div><span class="itinerary-day-label" data-i18n="travel.wedding_day2_label">Saturday 9 October</span><h3 data-i18n="travel.wedding_day2_title">The Wedding ♡</h3><p class="itinerary-route" data-i18n="travel.wedding_day2_route">Magherafelt → Cookstown</p><p data-i18n="travel.wedding_day2_copy">The celebrations begin around noon and continue late into the evening.</p></div>
+                </article>
+                <article class="itinerary-day">
+                  <span class="itinerary-day-marker">◆</span>
+                  <div><span class="itinerary-day-label" data-i18n="travel.wedding_day3_label">Sunday 10 October</span><h3 data-i18n="travel.wedding_day3_title">A Slow Sunday</h3><p class="itinerary-route" data-i18n="travel.wedding_day3_route">Relax · Recover · Celebrate</p><p data-i18n="travel.wedding_day3_copy">No alarms necessary. Enjoy a leisurely morning after the wedding before joining Laura &amp; Peter in the afternoon to continue the celebrations. Guests staying at the Glenavon can also enjoy the hotel’s leisure facilities.</p></div>
+                </article>
+                <article class="itinerary-day">
+                  <span class="itinerary-day-marker">◆</span>
+                  <div><span class="itinerary-day-label" data-i18n="travel.wedding_day4_label">Monday 11 October</span><h3 data-i18n="travel.wedding_day4_title">Homeward Bound</h3><p class="itinerary-route" data-i18n="travel.wedding_day4_route">Cookstown → Dublin</p><p data-i18n="travel.wedding_day4_copy">After breakfast, travel back towards Dublin Airport for the journey home.</p></div>
+                </article>
+              </div>
+            </div>
+          </article>
+
+          <div class="itinerary-longer-heading">
+            <h2 data-i18n="travel.longer_title">Staying a Little Longer?</h2>
+            <p class="travel-script" data-i18n="travel.longer_script">Turn the journey into an adventure...</p>
+          </div>
+
+          <div class="itinerary-grid">
+            <article class="itinerary-card">
+              <span class="itinerary-duration" data-i18n="travel.days4">4 Days</span>
+              <h3 data-i18n="travel.itinerary4_title">Coast &amp; City</h3>
+              <p class="itinerary-card-route" data-i18n="travel.itinerary4_route">Dublin → Belfast → Causeway Coast → Cookstown</p>
+              <img class="itinerary-card-image" src="assets/heros/belfast.jpg" alt="Belfast" loading="lazy">
+              <p class="itinerary-transport" data-i18n="travel.car_recommended_public">Car recommended</p>
+              <button class="itinerary-toggle" type="button" aria-expanded="false" aria-controls="itinerary-4" data-i18n-closed="travel.view_itinerary" data-i18n-open="travel.close_itinerary">View Itinerary ↓</button>
+              <div id="itinerary-4" class="itinerary-details" hidden>
+                <div class="itinerary-timeline">
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.coast_day1_label">Day 1 · Tuesday 5 October · Dublin</span><h3 data-i18n="travel.coast_day1_title">Welcome to Ireland</h3><p data-i18n="travel.coast_day1_copy">Arrive in Dublin and enjoy your first afternoon exploring the city centre, its historic streets, parks, pubs and restaurants.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.coast_day2_label">Day 2 · Wednesday 6 October · Dublin Coast &amp; Belfast</span><h3 data-i18n="travel.coast_day2_title">City streets &amp; sea air</h3><p data-i18n="travel.coast_day2_copy">Spend the morning exploring Howth or Malahide, then travel north to Belfast for the evening.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.coast_day3_label">Day 3 · Thursday 7 October · Belfast</span><h3 data-i18n="travel.coast_day3_title">Discover Belfast</h3><p data-i18n="travel.coast_day3_copy">Enjoy a full day in Belfast, with options including City Hall, the Cathedral Quarter and Titanic Quarter, followed by an evening in the city.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.coast_day4_label">Day 4 · Friday 8 October · Causeway Coast</span><h3 data-i18n="travel.coast_day4_title">Castles, cliffs &amp; coastline</h3><p class="itinerary-route" data-i18n="travel.coast_day4_route">Belfast → Giant's Causeway → Dunluce Castle → Cookstown</p><p data-i18n="travel.coast_day4_copy">Spend your final sightseeing day on the Causeway Coast before travelling to Cookstown/Magherafelt and checking into your wedding accommodation.</p><p class="itinerary-finale" data-i18n="travel.next_stop">Next stop: the wedding. ♡</p></div></article>
+                </div>
+              </div>
+            </article>
+
+            <article class="itinerary-card">
+              <span class="itinerary-duration" data-i18n="travel.days5">5 Days</span>
+              <h3 data-i18n="travel.itinerary5_title">The Irish Experience</h3>
+              <p class="itinerary-card-route" data-i18n="travel.itinerary5_route">Dublin → Dublin Coast → Belfast → Causeway Coast → Cookstown</p>
+              <img class="itinerary-card-image" src="assets/heros/dublin.jpg" alt="Dublin" loading="lazy">
+              <p class="itinerary-transport" data-i18n="travel.car_recommended_public">Car recommended</p>
+              <button class="itinerary-toggle" type="button" aria-expanded="false" aria-controls="itinerary-5" data-i18n-closed="travel.view_itinerary" data-i18n-open="travel.close_itinerary">View Itinerary ↓</button>
+              <div id="itinerary-5" class="itinerary-details" hidden>
+                <div class="itinerary-timeline">
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.experience_day1_label">Day 1 · Monday 4 October · Dublin</span><h3 data-i18n="travel.experience_day1_title">Welcome to Ireland</h3><p data-i18n="travel.experience_day1_copy">Arrive, settle in and enjoy a relaxed first afternoon and evening in Dublin.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.experience_day2_label">Day 2 · Tuesday 5 October · Dublin</span><h3 data-i18n="travel.experience_day2_title">Discover the capital</h3><p data-i18n="travel.experience_day2_copy">Spend a full day exploring Dublin at your own pace.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.experience_day3_label">Day 3 · Wednesday 6 October · Howth or Malahide → Belfast</span><h3 data-i18n="travel.experience_day3_title">From the Irish Sea to Belfast</h3><p data-i18n="travel.experience_day3_copy">Choose Howth or Malahide for a relaxed coastal morning before travelling north to Belfast.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.experience_day4_label">Day 4 · Thursday 7 October · Belfast</span><h3 data-i18n="travel.experience_day4_title">Titanic city</h3><p data-i18n="travel.experience_day4_copy">Spend the day exploring Belfast, with plenty of time for the Titanic Quarter, Cathedral Quarter and city centre.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.experience_day5_label">Day 5 · Friday 8 October · Causeway Coast</span><h3 data-i18n="travel.experience_day5_title">One last adventure before the wedding</h3><p class="itinerary-route" data-i18n="travel.experience_day5_route">Belfast → Giant's Causeway → Dunluce Castle → Cookstown</p><p data-i18n="travel.experience_day5_copy">Take the scenic route through the North Coast before arriving in the wedding area for Friday evening.</p><p class="itinerary-finale" data-i18n="travel.next_stop">Next stop: the wedding. ♡</p></div></article>
+                </div>
+              </div>
+            </article>
+
+            <article class="itinerary-card itinerary-card--adventure">
+              <span class="itinerary-duration" data-i18n="travel.days6">6 Days</span>
+              <h3 data-i18n="travel.itinerary6_title">The Wild Atlantic Wedding Road Trip</h3>
+              <p class="itinerary-card-route" data-i18n="travel.itinerary6_route">Dublin → Galway → Cliffs of Moher → Belfast → Causeway Coast → Cookstown</p>
+              <img class="itinerary-card-image" src="assets/heros/cliff_moher1.jpg" alt="Cliffs of Moher" loading="lazy">
+              <p class="itinerary-transport" data-i18n="travel.car_strongly_recommended">Car Strongly Recommended</p>
+              <button class="itinerary-toggle" type="button" aria-expanded="false" aria-controls="itinerary-6" data-i18n-closed="travel.view_itinerary" data-i18n-open="travel.close_itinerary">View Itinerary ↓</button>
+              <div id="itinerary-6" class="itinerary-details" hidden>
+                <div class="itinerary-timeline">
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day1_label">Day 1 · Sunday 3 October · Dublin</span><h3 data-i18n="travel.adventure_day1_title">Welcome to Ireland</h3><p data-i18n="travel.adventure_day1_copy">Arrive in Dublin, settle in and spend your first afternoon and evening discovering the city.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day2_label">Day 2 · Monday 4 October · Dublin &amp; the Coast</span><h3 data-i18n="travel.adventure_day2_title">City streets &amp; sea air</h3><p data-i18n="travel.adventure_day2_copy">Enjoy more time in Dublin and choose Howth or Malahide for a coastal escape.</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day3_label">Day 3 · Tuesday 5 October · Galway</span><h3 data-i18n="travel.adventure_day3_title">Across the Emerald Isle</h3><p class="itinerary-route" data-i18n="travel.adventure_day3_route">Dublin → Galway</p><p data-i18n="travel.adventure_day3_copy">Travel west to Galway and spend the afternoon and evening exploring its colourful streets, restaurants and traditional music scene.</p><p class="itinerary-overnight" data-i18n="travel.overnight_galway">Overnight · Galway</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day4_label">Day 4 · Wednesday 6 October · Cliffs of Moher &amp; The Burren</span><h3 data-i18n="travel.adventure_day4_title">The Wild Atlantic Way</h3><p class="itinerary-route" data-i18n="travel.adventure_day4_route">Galway → The Burren → Cliffs of Moher → Galway</p><p data-i18n="travel.adventure_day4_copy">Make this the big landscape day. Explore the Burren and the Cliffs of Moher before returning to Galway for the evening.</p><p class="itinerary-finale" data-i18n="travel.wedding_awaits">Overnight · Galway</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day5_label">Day 5 · Thursday 7 October · Belfast</span><h3 data-i18n="travel.adventure_day5_title">From west coast to north</h3><p class="itinerary-route" data-i18n="travel.adventure_day5_route">Galway → Belfast</p><p data-i18n="travel.adventure_day5_copy">Travel north-east to Belfast, check in and enjoy a relaxed afternoon and evening in the city.</p><p class="itinerary-overnight" data-i18n="travel.overnight_belfast">Overnight · Belfast</p></div></article>
+                  <article class="itinerary-day"><span class="itinerary-day-marker">◆</span><div><span class="itinerary-day-label" data-i18n="travel.adventure_day6_label">Day 6 · Friday 8 October · Causeway Coast</span><h3 data-i18n="travel.adventure_day6_title">One last adventure before the wedding</h3><p class="itinerary-route" data-i18n="travel.adventure_day6_route">Belfast → Giant's Causeway → Dunluce Castle → Cookstown</p><p data-i18n="travel.adventure_day6_copy">Spend the final day travelling along the North Coast before heading inland to Cookstown/Magherafelt and settling in for the wedding.</p><p class="itinerary-finale" data-i18n="travel.final_journey">Next stop: the wedding. ♡</p></div></article>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="itinerary-disclaimer" data-i18n="travel.itinerary_disclaimer">Routes and timings are intended as inspiration only. Transport schedules, attraction opening times and travel conditions may change, so please check the latest information when planning your journey.</p>
+          <p class="itinerary-note" data-i18n="travel.itinerary_note">However long you stay, we're simply happy you're coming. ♡</p>
+        </section>
+        <button class="travel-guide-back" type="button" data-i18n="travel.back_to_overview">Back to Travel Information ↑</button>
+      </div>
+    </section>
+
+    <section id="faq" class="panel faq-section">
+      <img src="assets/flowers/flowers4.png" alt="" class="faq-botanical faq-botanical-top-right-flower" aria-hidden="true" loading="lazy">
+
+      <div class="faq-header">
+        <h2 data-i18n="faq.title">FAQ</h2>
+        <div class="heart-divider faq-divider" aria-hidden="true">
+          <span></span>
+          <b>&hearts;</b>
+          <span></span>
+        </div>
+        <p class="faq-subtitle" data-i18n="faq.subtitle">Frequently Asked Questions</p>
+        <p class="faq-intro" data-i18n="faq.intro">Everything you might need to know before celebrating with us.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-column">
+          <h3 class="faq-category" data-i18n="faq.category_day">The Wedding Day</h3>
+          <div class="faq-panel">
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <span data-i18n="faq.q1">What time should I arrive?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-1" class="faq-answer" hidden>
+            <p data-i18n="faq.a1">Please arrive by 14:30 for seating and welcome drinks.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <span data-i18n="faq.q2">Where are the ceremony and reception?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-2" class="faq-answer" hidden>
+            <p data-i18n="faq.a2">The ceremony will take place at the Church of Our Lady of the Assumption in Magherafelt. Afterwards, the celebrations will continue at Glenavon House Hotel in Cookstown, Northern Ireland.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <span data-i18n="faq.q3">What is the dress code?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-3" class="faq-answer" hidden>
+            <p data-i18n="faq.a3">Cocktail attire in soft neutrals is perfect.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <span data-i18n="faq.q4">How will the day look?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-4" class="faq-answer" hidden>
+            <p data-i18n="faq.a4">The ceremony begins at 1pm. After we are married, we will have group photos outside the church, so please do not rush away. The wedding reception starts at 3pm at Glenavon House Hotel, with drinks and finger food, including a few Hungarian treats. We will join the reception once we have finished our photo session, and there will be entertainment during the reception, so it is not to be missed. Dinner will begin from 5pm, with speeches at 5.15pm, and we will finish dinner with the wedding cake. Then it is time for the first dance and the party. We will have a live band playing a mix of Irish, Hungarian and international songs, followed by a DJ. Late-night food will be served from 10pm, and the DJ will finish at around 1am due to venue restrictions. Late-night drinks will be available at the hotel bar.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-15">
+            <span data-i18n="faq.q15">Will the wedding be indoors or outdoors?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-15" class="faq-answer" hidden>
+            <p data-i18n="faq.a15">The wedding will be indoors, with very close access to the outdoor terrace at Glenavon House Hotel.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <span data-i18n="faq.q5">Is parking available?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-5" class="faq-answer" hidden>
+            <p data-i18n="faq.a5">Complimentary on-site parking is available, with plenty of spaces for our guests.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+            <span data-i18n="faq.q6">Are children invited?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-6" class="faq-answer" hidden>
+            <p data-i18n="faq.a6">Please follow the names listed on your invitation when replying.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+            <span data-i18n="faq.q7">Can I bring a plus one?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-7" class="faq-answer" hidden>
+            <p data-i18n="faq.a7">If your invitation includes a plus one, please include their name in your RSVP.</p>
+          </div>
+        </article>
+
+          </div>
+        </div>
+
+        <div class="faq-column">
+          <h3 class="faq-category" data-i18n="faq.category_info">Good to Know</h3>
+          <div class="faq-panel">
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+            <span data-i18n="faq.q8">Can dietary requirements be accommodated?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-8" class="faq-answer" hidden>
+            <p data-i18n="faq.a8">Please include any dietary requirements or allergies in your RSVP message.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-16">
+            <span data-i18n="faq.q16">When is the RSVP deadline?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-16" class="faq-answer" hidden>
+            <p data-i18n="faq.a16">Please RSVP by 1 August.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+            <span data-i18n="faq.q9">How do I book the special hotel rate?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-9" class="faq-answer" hidden>
+            <p data-i18n="venue.stay_copy1">A limited number of rooms have been reserved for our wedding guests at a special discounted rate.</p>
+            <p><strong data-i18n="venue.stay_note">This rate is not available online.</strong></p>
+            <p><span data-i18n="venue.stay_copy2a">Please book directly with the hotel by phone or email and quote</span> <strong>&ldquo;Laura &amp; Peter, 9 October 2027&rdquo;</strong> <span data-i18n="venue.stay_copy2b">to receive the wedding rate.</span></p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+            <span data-i18n="faq.q10">Can I leave my car overnight?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-10" class="faq-answer" hidden>
+            <p data-i18n="faq.a10">Guests can leave their cars at the hotel overnight and collect them the following morning.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
+            <span data-i18n="faq.q11">How do I RSVP?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-11" class="faq-answer" hidden>
+            <p data-i18n="faq.a11">Use the RSVP form below and send via Gmail.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
+            <span data-i18n="faq.q12">Who should I contact if I have a question?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-12" class="faq-answer" hidden>
+            <p data-i18n="faq.a12">Please use the contact details below and we will be happy to help.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-13">
+            <span data-i18n="faq.q13">What are some Irish wedding traditions?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-13" class="faq-answer" hidden>
+            <p data-i18n="faq.a13">Irish wedding traditions can include handfasting, Claddagh rings, traditional music and lively celebrations. Every couple chooses the traditions that feel most meaningful to them.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-14">
+            <span data-i18n="faq.q14">What should we expect at a Hungarian wedding?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div id="faq-answer-14" class="faq-answer" hidden>
+            <p data-i18n="faq.a14">Hungarian weddings often include lively music, dancing, heartfelt speeches and plenty of food and drink. Some celebrations may also feature traditional games or customs, but every couple creates a day that feels personal to them.</p>
+          </div>
+        </article>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-contact">
+        <p data-i18n="faq.contact">Questions? Contact us anytime.</p>
+      </div>
+    </section>
+
+    <section id="rsvp" class="panel rsvp-section">
+      <img src="assets/leaves/leaves3.png" alt="" class="rsvp-floral rsvp-floral-bottom-left-leaf" aria-hidden="true">
+      <div class="rsvp-card">
+        <form id="rsvp-form" class="rsvp-form" novalidate>
+          <div class="rsvp-layout">
+            <aside class="rsvp-left" aria-label="RSVP invitation" data-i18n-aria-label="rsvp.invitation">
+              <div class="rsvp-header">
+                <h2 data-i18n="rsvp.title">Kindly RSVP</h2>
+                <p class="rsvp-deadline" data-i18n="rsvp.deadline">By RSVP deadline to be confirmed</p>
+                <div class="rsvp-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+                <p class="rsvp-intro" data-i18n="rsvp.copy">We can't wait to celebrate with you on our special day.</p>
+                <p class="rsvp-intro-alt" data-i18n="rsvp.copy_alt">Your presence means the world to us.</p>
+              </div>
+
+              <fieldset class="rsvp-attendance" aria-controls="rsvp-right">
+                <legend data-i18n="rsvp.attendance_prompt">Will you be joining us?</legend>
+                <div class="rsvp-choice-grid">
+                  <label class="rsvp-choice" data-attendance-value="Yes">
+                    <input type="radio" name="attendance-choice" value="Yes">
+                    <span class="rsvp-choice-icon" aria-hidden="true">&#9829;</span>
+                    <strong data-i18n="rsvp.yes_short">Joyfully accepts</strong>
+                    <small data-i18n="rsvp.yes_note">We can't wait!</small>
+                  </label>
+                  <label class="rsvp-choice" data-attendance-value="No">
+                    <input type="radio" name="attendance-choice" value="No">
+                    <span class="rsvp-choice-icon" aria-hidden="true">&#10022;</span>
+                    <strong data-i18n="rsvp.no_short">Regretfully declines</strong>
+                    <small data-i18n="rsvp.no_note">We will celebrate from afar.</small>
+                  </label>
+                </div>
+              </fieldset>
+            </aside>
+
+            <div class="rsvp-right" id="rsvp-right" hidden>
+              <input id="attendance" name="attendance" type="hidden" value="">
+
+              <div class="rsvp-details">
+                <h3 data-i18n="rsvp.details_title">Your Attendance</h3>
+
+                <div class="rsvp-field">
+                  <label for="name" class="rsvp-label" data-i18n="rsvp.name">Guest name(s)</label>
+                  <p class="rsvp-field-help" data-i18n="rsvp.name_help">Please list everyone attending from your invitation.</p>
+                  <input id="name" name="name" required data-i18n-placeholder="rsvp.name_placeholder" placeholder="e.g. Laura, Peter, Cillian...">
+                </div>
+
+                <p class="rsvp-label rsvp-contact-heading" data-i18n="rsvp.contact_details_title">Contact Details</p>
+                <p class="rsvp-field-help" data-i18n="rsvp.contact_details_help">Email and/or phone number, so we can keep in touch with you if needed.</p>
+
+                <div class="rsvp-field">
+                  <input id="contact" name="contact" type="text" required aria-label="Contact Details" data-i18n-aria-label="rsvp.contact_details_title" data-i18n-placeholder="rsvp.contact_placeholder" placeholder="e.g. laura@email.com or +44 7123 456789">
+                </div>
+
+                <div class="rsvp-attending-fields">
+                  <div class="rsvp-field">
+                    <label for="main-course" class="rsvp-label" data-i18n="rsvp.main_course">Your main course selection</label>
+                    <p class="rsvp-field-help" data-i18n="rsvp.main_course_help">Please tell us each attending guest's name and their main course choice. Please also add if you have any special dietary requirements.</p>
+                    <textarea id="main-course" name="mainCourse" rows="3" data-i18n-placeholder="rsvp.main_course_placeholder" placeholder="e.g. Peter - Beef, Laura - Salmon, Cillian - Beef"></textarea>
+                  </div>
+                </div>
+
+                <div class="rsvp-divider rsvp-divider-mid" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+
+                <div class="rsvp-lower-grid">
+                  <section class="rsvp-message-section">
+                    <label for="message" class="rsvp-label" data-i18n="rsvp.message">Message for Laura &amp; Peter</label>
+                    <div class="rsvp-speech-field">
+                      <p class="rsvp-speech-copy"><span class="rsvp-speech-title" data-i18n="rsvp.speech_title">Would you like to say a few words?</span> <span data-i18n="rsvp.speech_copy">If you would like to give a speech or toast during the celebrations, simply mention it in your message below and we'll be in touch.</span></p>
+                    </div>
+                    <textarea id="message" name="message" rows="3" data-i18n-placeholder="rsvp.message_placeholder" placeholder="Leave us a little message..."></textarea>
+                  </section>
+                </div>
+
+                <div class="rsvp-song-block">
+                  <div class="rsvp-song-content">
+                    <label for="song" class="rsvp-label" data-i18n="rsvp.song_title">Song for the dance floor</label>
+                    <p class="rsvp-song-prompt-line"><span class="rsvp-song-subtitle" data-i18n="rsvp.song_subtitle">What will get you dancing?</span> <span class="rsvp-field-help" data-i18n="rsvp.song_help">Help us build the soundtrack to our celebration.</span></p>
+                    <div class="rsvp-song-input-row">
+                      <input id="song" name="song" type="text" data-i18n-placeholder="rsvp.song_placeholder" placeholder="Song title &amp; artist...">
+                      <img src="assets/icons/discoball_icon.png" class="rsvp-song-icon" alt="" aria-hidden="true">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rsvp-divider rsvp-divider-submit" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+
+                <p id="rsvp-feedback" class="rsvp-feedback" role="alert" aria-live="polite" hidden></p>
+                <button type="submit" class="rsvp-submit" data-i18n="rsvp.send">Submit RSVP &rarr;</button>
+              </div>
+
+              <div class="rsvp-success" aria-live="polite" hidden>
+                <h3 data-i18n="rsvp.thanks">Thank you</h3>
+                <div class="rsvp-ornament" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+                <p class="rsvp-success-attending" data-i18n="rsvp.confirm_attending">We can't wait to celebrate with you.</p>
+                <p class="rsvp-success-declining" data-i18n="rsvp.confirm_declining">Thank you for letting us know. You'll be missed on the day.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer" data-i18n-aria-label="common.footer">
+    <div class="footer-inner">
+      <p class="footer-couple">LAURA &amp; PETER</p>
+      <p class="footer-date">09 &middot; 10 &middot; 2027</p>
+
+      <p class="footer-divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></p>
+
+      <nav class="footer-links" aria-label="Footer quick links" data-i18n-aria-label="common.footer_links">
+        <a href="#venue" data-i18n="footer.link_venue">Venue</a>
+        <a href="#menu" data-i18n="footer.link_menu">Menu</a>
+        <a href="#travel" data-i18n="footer.link_travel">Travel Info</a>
+        <a href="#rsvp" data-i18n="footer.link_rsvp">RSVP</a>
+        <a href="#faq" data-i18n="footer.link_faq">FAQs</a>
+      </nav>
+
+      <a class="footer-top" href="#" aria-label="Back to top">
+        <span class="footer-top-arrow" aria-hidden="true">&uarr;</span>
+        <span class="footer-top-label" data-i18n="footer.back_to_top">Back to Top</span>
+      </a>
+
+      <p class="footer-credit" data-i18n="footer.credit">Made with love by Laura</p>
+      <p class="footer-copyright">&copy; 2026</p>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js?v=20260818-1"></script>
+</body>
+</html>

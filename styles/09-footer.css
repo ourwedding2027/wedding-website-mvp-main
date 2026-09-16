@@ -1,0 +1,163 @@
+.site-footer {
+  position: relative;
+  background: radial-gradient(circle at center, #641f27 0%, #541c21 48%, #42151a 100%);
+  color: #fbf8f3;
+  text-align: center;
+  padding: clamp(16px, 2.5vw, 28px) 24px 18px;
+}
+
+.footer-inner {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.footer-couple {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: #fbf8f3;
+  font-size: clamp(24px, 2.35vw, 30px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.footer-date {
+  margin: 0.3rem 0 0;
+  font-family: "Libre Baskerville", serif;
+  color: #b48a4e;
+  font-size: clamp(12px, 1.15vw, 14px);
+  letter-spacing: 0.18em;
+}
+
+.footer-divider {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.52rem;
+  margin: 1rem 0 0;
+}
+
+.footer-divider span {
+  width: clamp(76px, 10vw, 116px);
+  height: 1px;
+  background: rgba(180, 138, 78, 0.55);
+}
+
+.footer-divider b {
+  color: #b48a4e;
+  font-size: 0.78rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.62rem 1.4rem;
+  margin-top: 1.1rem;
+}
+
+.footer-links a {
+  color: #fbf8f3;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: clamp(15px, 1.35vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(180, 138, 78, 0.6);
+  padding-bottom: 0.2rem;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #b48a4e;
+  border-bottom-color: #b48a4e;
+}
+
+.footer-top {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.04rem;
+  margin-top: 1.3rem;
+  color: #fbf8f3;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(180, 138, 78, 0.6);
+  padding: 0.2rem 0.35rem;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.footer-top-arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.footer-top-label {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+}
+
+.footer-top:hover,
+.footer-top:focus-visible {
+  color: #b48a4e;
+  border-bottom-color: rgba(180, 138, 78, 0.75);
+}
+
+.footer-top:hover .footer-top-arrow,
+.footer-top:focus-visible .footer-top-arrow {
+  transform: translateY(-2px);
+}
+
+.footer-credit {
+  margin: 0.95rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #fbf8f3;
+  font-size: clamp(15px, 1.35vw, 17px);
+}
+
+.footer-copyright {
+  margin: 0.25rem 0 0;
+  font-family: "Libre Baskerville", serif;
+  color: rgba(251, 248, 243, 0.65);
+  font-size: clamp(12px, 1.05vw, 13px);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    padding: clamp(18px, 5vw, 30px) 18px 18px;
+  }
+
+  .footer-couple {
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    gap: 0.55rem 0.95rem;
+  }
+
+  .footer-top {
+    margin-top: 0.85rem;
+    padding: 0.28rem 0.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-links a,
+  .footer-top,
+  .footer-top-arrow {
+    transition: none;
+  }
+
+  .footer-top:hover .footer-top-arrow,
+  .footer-top:focus-visible .footer-top-arrow {
+    transform: none;
+  }
+}
