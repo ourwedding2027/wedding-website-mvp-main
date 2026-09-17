@@ -29,12 +29,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260818-1">
+  <link rel="stylesheet" href="styles.css?v=20260818-4">
 </head>
 <body>
   <a href="#main-content" class="skip-navigation" data-i18n="common.skip_navigation">Skip to main content</a>
   <header class="site-header">
     <div class="brand">Laura & Peter</div>
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav aria-label="Main navigation" data-i18n-aria-label="common.main_navigation">
       <a href="#venue" data-i18n="nav.venue">Venue</a>
       <a href="#menu" data-i18n="nav.menu">Menu</a>
@@ -46,6 +57,19 @@
       <button class="header-language-btn is-active" type="button" data-language="en" aria-pressed="true">English</button>
       <button class="header-language-btn" type="button" data-language="hu" aria-pressed="false">Magyar</button>
     </div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" data-i18n-aria-label="common.main_navigation" hidden>
+      <div class="mobile-menu-links">
+        <a href="#venue" data-i18n="nav.venue">Venue</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#travel" data-i18n="nav.travel">Travel Info</a>
+        <a href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
+        <a href="#faq" data-i18n="nav.faq">FAQs</a>
+      </div>
+      <div class="mobile-menu-languages" aria-label="Language switch" data-i18n-aria-label="common.language_switch">
+        <button class="mobile-language-btn" type="button" data-language="en" aria-pressed="true">English</button>
+        <button class="mobile-language-btn" type="button" data-language="hu" aria-pressed="false">Magyar</button>
+      </div>
+    </nav>
   </header>
 
   <main id="main-content">

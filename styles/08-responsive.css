@@ -1,6 +1,55 @@
-﻿@media (max-width: 700px) {
+﻿@media (max-width: 768px) {
   main h2 {
-    font-size: clamp(1.8rem, 9vw, 2.6rem);
+    font-size: clamp(1.4rem, 6.4vw, 1.95rem);
+  }
+
+  .venue-hero-eyebrow,
+  .celebration-header h2,
+  .menu-title,
+  .faq-header h2,
+  .travel-kicker,
+  .travel-section-heading h2,
+  .travel-stay-band h2,
+  .travel-itineraries h2 {
+    font-size: clamp(1.4rem, 6.4vw, 1.95rem);
+    letter-spacing: 0.08em;
+    line-height: 1.08;
+  }
+
+  .venue-hero-copy,
+  .venue-hero-stay p,
+  .celebration-card-description,
+  .celebration-card-address,
+  .menu-course p,
+  .travel-intro-copy > p:not(.travel-kicker):not(.travel-script),
+  .travel-stay-band p,
+  .airport-item p,
+  .airport-item small,
+  .itinerary-card p,
+  .itinerary-day p,
+  .travel-stay-copy,
+  .faq-intro,
+  .faq-answer p,
+  .rsvp-header p,
+  .rsvp-card p {
+    font-size: clamp(0.82rem, 3.25vw, 0.92rem);
+    line-height: 1.55;
+  }
+
+  .wedding-details-subtitle,
+  .countdown-caption,
+  .travel-script,
+  .faq-subtitle {
+    font-size: clamp(1.4rem, 6.4vw, 1.85rem);
+    line-height: 1.15;
+  }
+
+  .venue-hero-stay h3,
+  .menu-course h3,
+  .celebration-card h3,
+  .itinerary-card h3 {
+    font-size: clamp(1.18rem, 5.5vw, 1.48rem);
+    line-height: 1.18;
   }
 
   .invitation-hero {
@@ -8,25 +57,121 @@
   }
 
   .site-header {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 16px 20px;
   }
 
+  .brand {
+    flex: 0 1 auto;
+    white-space: nowrap;
+  }
+
+  .site-header > nav:not(.mobile-menu),
   .header-language-switch {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
     margin-left: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #8F232E;
+    cursor: pointer;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .mobile-menu-toggle:focus-visible {
+    outline: 1px solid #B48A4E;
+    outline-offset: 4px;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    padding: 0.8rem 20px 0.95rem;
+    border-bottom: 1px solid rgba(180, 138, 78, 0.58);
+    background: #FBF8F3;
+  }
+
+  .mobile-menu.is-open {
+    display: block;
+  }
+
+  .mobile-menu-links,
+  .mobile-menu-languages {
+    display: grid;
+    gap: 0;
+  }
+
+  .mobile-menu-links a,
+  .mobile-language-btn {
+    padding: 0.48rem 0;
+    border: 0;
+    background: transparent;
+    color: #8F232E;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu-links a::after {
+    display: none;
+  }
+
+  .mobile-menu-languages {
+    margin-top: 0.45rem;
+    padding-top: 0.45rem;
+    border-top: 1px solid rgba(180, 138, 78, 0.58);
+  }
+
+  .mobile-language-btn {
+    cursor: pointer;
+  }
+
+  .mobile-language-btn.is-active {
+    color: #B48A4E;
   }
 
   .hero-floral-left,
   .hero-floral-right {
-    width: clamp(130px, 34vw, 210px);
-    top: clamp(-10px, -1.5vw, -4px);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
   }
 
   .hero-floral-left {
-    left: clamp(-14px, -2vw, -6px);
+    left: clamp(-58px, -13vw, -42px);
+    top: clamp(18px, 5vw, 34px);
+    width: clamp(220px, 58vw, 300px);
   }
 
   .hero-floral-right {
-    right: clamp(-14px, -2vw, -6px);
+    right: clamp(-62px, -14vw, -44px);
+    top: clamp(16px, 5vw, 32px);
+    width: clamp(205px, 55vw, 285px);
   }
 
   .countdown-grid {
@@ -61,8 +206,8 @@
   }
 
   .countdown-title {
-    font-size: clamp(1.8rem, 9vw, 2.6rem);
-    letter-spacing: 0.1em;
+    font-size: clamp(1.55rem, 7.2vw, 2.15rem);
+    letter-spacing: 0.08em;
   }
 
   .countdown-divider {
@@ -79,10 +224,10 @@
   }
 
   #countdown .countdown-botanical {
-    width: clamp(190px, 32vw, 260px);
-    left: clamp(-100px, -13vw, -70px);
+    width: clamp(270px, 62vw, 390px);
+    left: clamp(-150px, -30vw, -96px);
     top: auto;
-    bottom: clamp(-68px, -8vw, -44px);
+    bottom: clamp(-104px, -18vw, -62px);
   }
 
   .menu-section {
@@ -123,15 +268,15 @@
   }
 
   .menu-botanical-bottom-left {
-    bottom: clamp(-120px, -15vw, -82px);
-    left: clamp(-120px, -15vw, -82px);
-    width: clamp(200px, 31vw, 250px);
+    bottom: clamp(-150px, -28vw, -96px);
+    left: clamp(-156px, -30vw, -100px);
+    width: clamp(280px, 62vw, 390px);
   }
 
   .menu-botanical-top-right {
-    top: clamp(-32px, -4vw, -20px);
-    right: clamp(-32px, -4vw, -20px);
-    width: clamp(88px, 13.5vw, 115px);
+    top: clamp(-56px, -10vw, -30px);
+    right: clamp(-74px, -15vw, -42px);
+    width: clamp(170px, 40vw, 245px);
   }
 
   .reception-grid,
@@ -143,7 +288,12 @@
   }
 
   .venue-hero {
-    min-height: 460px;
+    min-height: 0;
+    background: #fbf8f3;
+  }
+
+  .venue-hero-image {
+    object-position: 62% 42%;
   }
 
   .travel-intro {
@@ -175,6 +325,13 @@
   .travel-itineraries {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .travel-guide:not([hidden]),
+  .itinerary-details:not([hidden]) {
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
   }
 
   .airport-grid {
@@ -231,12 +388,19 @@
     grid-template-columns: 1fr;
     gap: 0.85rem;
     width: min(650px, 100%);
-    padding: 1.25rem 1.1rem;
+    padding: 1.05rem 1rem;
   }
 
   .travel-stay-copy {
     width: 100%;
     text-align: left;
+  }
+
+  .travel-stay-band .travel-stay-lead,
+  .travel-stay-band .travel-stay-alternative-lead,
+  .travel-stay-alternative p:last-child {
+    font-size: clamp(0.82rem, 3.25vw, 0.92rem);
+    line-height: 1.55;
   }
 
   .itinerary-card h3 {
@@ -246,21 +410,24 @@
   .venue-hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(251, 248, 243, 0) 0%,
-      rgba(251, 248, 243, 0.35) 45%,
-      rgba(251, 248, 243, 0.92) 100%
+      rgba(251, 248, 243, 0.28) 0%,
+      rgba(251, 248, 243, 0.12) 42%,
+      rgba(251, 248, 243, 0.42) 100%
     );
   }
 
   .venue-hero-frame {
-    min-height: 460px;
-    align-items: end;
-    padding: 1.9rem 1.25rem 2.25rem;
+    min-height: 0;
+    align-items: flex-start;
+    padding: 2.25rem 1.25rem 2.4rem;
   }
 
   .venue-hero-content {
     width: 100%;
     max-width: 460px;
+    padding: 1.2rem 1rem;
+    background: rgba(251, 248, 243, 0.78);
+    border-left: 1px solid rgba(180, 138, 78, 0.55);
   }
 
   .timeline-section {
@@ -276,7 +443,7 @@
   .timeline-floral-bottom-right { width: clamp(180px, 27vw, 230px); right: clamp(-56px, -6.8vw, -36px); bottom: clamp(-34px, -4vw, -22px); }
 
   .timeline-monogram { font-size: 1.6rem; letter-spacing: 0.3em; }
-  .timeline-header h2 { font-size: clamp(1.8rem, 9vw, 2.6rem); letter-spacing: 0.09em; }
+  .timeline-header h2 { font-size: clamp(1.4rem, 6.4vw, 1.95rem); letter-spacing: 0.08em; }
   .timeline-family { font-size: 1.15rem; letter-spacing: 0.09em; }
   .timeline-couple { font-size: 2.15rem; }
   .timeline-date { font-size: 1.5rem; }
@@ -312,12 +479,12 @@
   }
 
   .timeline-stop h3 {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
   }
 
   .timeline-stop p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.86rem;
+    line-height: 1.45;
   }
 
   .timeline-thanks {
@@ -338,19 +505,20 @@
   }
 
   .rsvp-floral-bottom-left {
-    bottom: clamp(-48px, -9vw, -30px);
-    left: clamp(-24px, -5vw, -14px);
-    width: clamp(130px, 28vw, 180px);
+    bottom: clamp(-72px, -14vw, -42px);
+    left: clamp(-56px, -11vw, -28px);
+    width: clamp(190px, 45vw, 260px);
   }
 
   .rsvp-floral-bottom-left-leaf {
-    bottom: clamp(-54px, -10vw, -34px);
-    left: clamp(60px, 16vw, 100px);
-    width: clamp(130px, 28vw, 180px);
+    bottom: clamp(-78px, -15vw, -46px);
+    left: clamp(34px, 12vw, 76px);
+    width: clamp(190px, 46vw, 270px);
   }
 
   .rsvp-header h2 {
-    letter-spacing: 0.12em;
+    font-size: clamp(1.4rem, 6.4vw, 1.95rem);
+    letter-spacing: 0.08em;
   }
 
   .rsvp-deadline {
@@ -372,15 +540,15 @@
   }
 
   .faq-botanical-top-right {
-    top: clamp(95px, 22vw, 130px);
-    right: clamp(8px, 3vw, 20px);
-    width: clamp(135px, 28vw, 180px);
+    top: clamp(82px, 20vw, 120px);
+    right: clamp(-22px, -4vw, 8px);
+    width: clamp(180px, 42vw, 250px);
   }
 
   .faq-botanical-top-right-flower {
-    top: clamp(-70px, -12vw, -42px);
-    right: clamp(-65px, -12vw, -35px);
-    width: clamp(180px, 40vw, 260px);
+    top: clamp(-104px, -22vw, -58px);
+    right: clamp(-104px, -21vw, -54px);
+    width: clamp(280px, 66vw, 410px);
   }
 
   .faq-question {
@@ -391,7 +559,7 @@
   .wedding-details { padding: 2.5rem 1rem; }
 
   .wedding-details-timeline h2 {
-    font-size: clamp(1.8rem, 9vw, 2.6rem);
+    font-size: clamp(1.4rem, 6.4vw, 1.95rem);
     letter-spacing: 0.08em;
   }
 
@@ -408,8 +576,7 @@
   }
 
   .wedding-events::before {
-    right: 0;
-    left: 0;
+    display: none;
   }
 
   .wedding-event {
@@ -418,14 +585,45 @@
     scroll-snap-align: start;
   }
 
+  .wedding-event h3 {
+    font-size: clamp(1.25rem, 5.6vw, 1.5rem);
+    line-height: 1.2;
+  }
+
+  .wedding-event div > p:not(.wedding-event-time) {
+    font-size: clamp(0.88rem, 3.5vw, 0.96rem);
+    line-height: 1.45;
+  }
+
+  .wedding-event:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 2.3rem;
+    left: 50%;
+    z-index: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--brass);
+  }
+
+  .wedding-event::before {
+    display: none;
+  }
+
+  .wedding-event-icon {
+    position: relative;
+    z-index: 1;
+    background: var(--ivory);
+  }
+
   .editorial-section {
     padding: calc(var(--section-space) * 0.3) 1rem;
   }
 
   .botanical--top-left {
-    width: clamp(160px, 34vw, 240px);
-    left: clamp(-58px, -7vw, -38px);
-    top: clamp(-42px, -5vw, -28px);
+    width: clamp(220px, 54vw, 320px);
+    left: clamp(-92px, -18vw, -56px);
+    top: clamp(-66px, -12vw, -38px);
   }
 }
 
@@ -441,21 +639,37 @@
   .celebration-cards {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    width: 100%;
   }
 
   .celebration-card {
-    width: min(94%, 600px);
-    max-width: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 560px;
     justify-self: center;
-    padding: 1.6rem;
+    padding: clamp(1.25rem, 5vw, 1.6rem);
   }
 
   .celebration-card h3 {
-    font-size: 1.7rem;
+    max-width: 100%;
+    font-size: clamp(1.18rem, 5.5vw, 1.48rem);
+    line-height: 1.18;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .celebration-card-description {
+    margin-top: 1rem;
+    line-height: 1.65;
+  }
+
+  .celebration-card-address {
+    margin-top: 1rem;
+    line-height: 1.65;
   }
 
   .celebration-card-accent {
-    width: clamp(58px, 9vw, 72px);
+    width: clamp(86px, 22vw, 126px);
   }
 
   .celebration-connector {
@@ -471,19 +685,23 @@
   }
 
   .celebration-photo-frame {
+    box-sizing: border-box;
     width: 100%;
+    margin-top: 1.15rem;
   }
 
   .celebration-photo-frame--reception {
-    margin-top: 1.5rem;
+    margin-top: 1.15rem;
   }
 
   .celebration-photo {
-    height: 220px;
+    height: clamp(165px, 48vw, 210px);
   }
 
   .celebration-card-map {
-    height: 220px;
+    box-sizing: border-box;
+    height: clamp(155px, 44vw, 200px);
+    margin-top: 1rem;
   }
 
   .celebration-journey {
@@ -492,14 +710,28 @@
   }
 
   .celebration-botanical-top-right {
-    top: clamp(-52px, -6vw, -34px);
-    right: clamp(-90px, -11vw, -58px);
-    width: clamp(195px, 28vw, 250px);
+    top: clamp(-78px, -14vw, -46px);
+    right: clamp(-130px, -25vw, -76px);
+    width: clamp(300px, 66vw, 430px);
   }
 
   .celebration-botanical-bottom-left {
-    bottom: clamp(-58px, -7vw, -38px);
-    left: clamp(-82px, -10vw, -52px);
-    width: clamp(175px, 25vw, 225px);
+    bottom: clamp(-90px, -17vw, -52px);
+    left: clamp(-122px, -23vw, -72px);
+    width: clamp(280px, 60vw, 390px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-floral-left {
+    left: -72px;
+    top: -24px;
+    width: clamp(230px, 63vw, 290px);
+  }
+
+  .hero-floral-right {
+    right: -76px;
+    top: -18px;
+    width: clamp(220px, 60vw, 275px);
   }
 }

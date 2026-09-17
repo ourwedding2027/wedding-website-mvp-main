@@ -18,6 +18,11 @@
   font-size: 1.4rem;
 }
 
+.mobile-menu-toggle,
+.mobile-menu {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
